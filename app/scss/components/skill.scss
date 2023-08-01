@@ -1,0 +1,20 @@
+@use '../util' as *;
+
+// .skills {
+//     gap: 4rem;
+// }
+
+.skills {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 1.5rem;
+   align-items: center;
+   justify-content: center;
+
+   img{
+    width: 7%;
+    @include breakpoint-down(smaller){
+        width: 9%;
+    }
+   }
+}
